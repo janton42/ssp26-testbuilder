@@ -21,4 +21,3 @@ var detectNetwork = function(cardNumber) {
 	}
 };
 
-
