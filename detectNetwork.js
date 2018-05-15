@@ -10,8 +10,14 @@
 var detectNetwork = function(cardNumber) {
 	var card = cardNumber.split('');
 	var firstTwo = [];
+	var firstFour = [];
+
 	firstTwo.push(card[0], card[1]);
 	firstTwo.join('');
+
+	firstFour.push(card[0], card[1], card[2], card[3]);
+	firstFour.join('');
+
 	if((firstTwo === 38 || 39) && (cardNumber.length === 14)){
 		return 'Diner\'s Club';
 	} else if ((firstTwo === 34 || 37) && (cardNumber.length === 15)) {
