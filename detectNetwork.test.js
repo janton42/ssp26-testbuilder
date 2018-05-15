@@ -305,7 +305,92 @@ describe('Maestro', function() {
   });
 });
 
-describe('should support China UnionPay'){
-  
-}
+
+//, , , , ,  lengths: 16, 18, 19
+describe('UnionPay', function(){
+var should = require('chai').should();
+
+//-----------4903------------------------------
+  it('has a prefix of 4903 and a length of 16', function(){
+    detectNetwork('4903490349034903').should.equal('UnionPay');
+  });
+  it('has a prefix of 4903 and a length of 18', function(){
+    detectNetwork('490349034903490312').should.equal('UnionPay');
+  });
+  it('has a prefix of 4903 and a length of 19', function(){
+    detectNetwork('4903490349034903123').should.equal('UnionPay');
+  });
+//------------------4905-----------------------
+  it('has a prefix of 4905 and a length of  16', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+  it('has a prefix of 4905 and a length of 18', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+  it('has a prefix of 4905 and a length of 19', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });  
+//------------------4911-----------------------
+  it('has a prefix of 4911 and a length of 16', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+  it('has a prefix of 4911 and a length of 18', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+  it('has a prefix of 4911 and a length of 19', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+//------------------4936-----------------------
+  it('has a prefix of 4936 and a length of 16', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+  it('has a prefix of 4936 and a length of 18', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+  it('has a prefix of 4936 and a length of 19', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+//-----------------564182----------------------
+  it('has a prefix of 564182 and a length of 16', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+  it('has a prefix of 564182 and a length of 18', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+  it('has a prefix of 564182 and a length of 19', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+//-----------------633110----------------------
+  it('has a prefix of 633110 and a length of 16', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+  it('has a prefix of 633110 and a length of 18', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+  it('has a prefix of 633110 and a length of 19', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+//------------------6333-----------------------
+  it('has a prefix of 6333 and a length of 16', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+  it('has a prefix of 6333 and a length of 18', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+  it('has a prefix of 6333 and a length of 19', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+//------------------6759-----------------------
+  it('has a prefix of 6333 and a length of 16', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+  it('has a prefix of 6333 and a length of 18', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+  it('has a prefix of 6333 and a length of 19', function(){
+    detectNetwork(' ').should.equal('UnionPay');
+  });
+
+});
+
 describe('should support Switch')
