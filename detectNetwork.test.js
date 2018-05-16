@@ -39,19 +39,16 @@ describe('Introduction to Mocha Tests - READ ME FIRST', function() {
 });
 describe('Diner\'s Club', function() {
   // Be careful, tests can have bugs too...
+  var should = require('chai').should();
 
   it('has a prefix of 38 and a length of 14', function() {
- 
-    if (detectNetwork('38345678901234') !== 'Diner\'s Club') {
-      throw new Error('Test failed');
+    detectNetwork('38345678901234').should.equal('Diner\'s Club') {
     }
   });
 
   it('has a prefix of 39 and a length of 14', function() {
-    if (detectNetwork('3934567890123') !== 'Diner\'s Club') {
-      throw new Error('Test failed');
+    detectNetwork('39345678901234').should.equal('Diner\'s Club') {
     }
- 
   });
 });
 
