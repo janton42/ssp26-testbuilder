@@ -306,7 +306,6 @@ describe('Maestro', function() {
 });
 
 
-//, , , , ,  lengths: 16, 18, 19
 describe('UnionPay', function(){
 var should = require('chai').should();
 
@@ -322,73 +321,73 @@ var should = require('chai').should();
   });
 //------------------4905-----------------------
   it('has a prefix of 4905 and a length of  16', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+    detectNetwork('4905490549054905').should.equal('UnionPay');
   });
   it('has a prefix of 4905 and a length of 18', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+    detectNetwork('490549054905490512').should.equal('UnionPay');
   });
   it('has a prefix of 4905 and a length of 19', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+    detectNetwork('4905490549054905123').should.equal('UnionPay');
   });  
 //------------------4911-----------------------
   it('has a prefix of 4911 and a length of 16', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+    detectNetwork('4911491149114911').should.equal('UnionPay');
   });
   it('has a prefix of 4911 and a length of 18', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+    detectNetwork('491149114911491112').should.equal('UnionPay');
   });
   it('has a prefix of 4911 and a length of 19', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+    detectNetwork('4911491149114911123').should.equal('UnionPay');
   });
 //------------------4936-----------------------
   it('has a prefix of 4936 and a length of 16', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+    detectNetwork('4936493649364936').should.equal('UnionPay');
   });
   it('has a prefix of 4936 and a length of 18', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+    detectNetwork('493649364936493612').should.equal('UnionPay');
   });
   it('has a prefix of 4936 and a length of 19', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+    detectNetwork('4936493649364936123').should.equal('UnionPay');
   });
 //-----------------564182----------------------
   it('has a prefix of 564182 and a length of 16', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+    detectNetwork('5641825641821234').should.equal('UnionPay');
   });
   it('has a prefix of 564182 and a length of 18', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+    detectNetwork('564182564182564182').should.equal('UnionPay');
   });
   it('has a prefix of 564182 and a length of 19', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+    detectNetwork('5641825641825641821').should.equal('UnionPay');
   });
 //-----------------633110----------------------
   it('has a prefix of 633110 and a length of 16', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+    detectNetwork('6331106331101234').should.equal('UnionPay');
   });
   it('has a prefix of 633110 and a length of 18', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+    detectNetwork('633110633110633110').should.equal('UnionPay');
   });
   it('has a prefix of 633110 and a length of 19', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+    detectNetwork('6331106331106331101').should.equal('UnionPay');
   });
 //------------------6333-----------------------
   it('has a prefix of 6333 and a length of 16', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+    detectNetwork('6333633363336333').should.equal('UnionPay');
   });
   it('has a prefix of 6333 and a length of 18', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+    detectNetwork('633363336333633312').should.equal('UnionPay');
   });
   it('has a prefix of 6333 and a length of 19', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+    detectNetwork('6333633363336333123').should.equal('UnionPay');
   });
 //------------------6759-----------------------
-  it('has a prefix of 6333 and a length of 16', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+  it('has a prefix of 6759 and a length of 16', function(){
+    detectNetwork('6759675967596759').should.equal('UnionPay');
   });
-  it('has a prefix of 6333 and a length of 18', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+  it('has a prefix of 6759 and a length of 18', function(){
+    detectNetwork('675967596759675912').should.equal('UnionPay');
   });
-  it('has a prefix of 6333 and a length of 19', function(){
-    detectNetwork(' ').should.equal('UnionPay');
+  it('has a prefix of 6759 and a length of 19', function(){
+    detectNetwork('6759675967596759123').should.equal('UnionPay');
   });
 
 });
