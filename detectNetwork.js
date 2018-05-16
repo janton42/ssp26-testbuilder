@@ -13,18 +13,18 @@ var detectNetwork = function(cardNumber) {
 	var firstFour = [];
 
 	firstTwo.push(card[0], card[1]);
-	firstTwo.join('');
+	firstTwo = firstTwo.join('');
 
 	firstFour.push(card[0], card[1], card[2], card[3]);
 	firstFour.join('');
 
-	if((firstTwo === 38 || 39) && (cardNumber.length === 14)){
+	if((cardNumber.length === 14) && ((firstTwo === '38') || (firstTwo === '39'))) {
 		return 'Diner\'s Club';
-	} else if ((firstTwo === 34 || 37) && (cardNumber.length === 15)) {
+	} else if ((cardNumber.length === 15) && ((firstTwo === '34') || (firstTwo === '37'))) {
 		return 'American Express';
-	} else if ((card[0] === 4) && (cardNumber.length === 13 || 16 || 19)) {
+	} else if (((cardNumber.length === 13) || (cardNumber.length === 16) || (cardNumber.length === 19)) && (card[0] === '4')) {
 		return 'Visa';
-	} else if ((firstTwo === 51 || 52 || 53 || 54 || 55) && (cardNumber.length === 16)){
+	} else if ((cardNumber.length === 16) && ((firstTwo === '51') || (firstTwo === '52') || (firstTwo === '53') || (firstTwo === '54') || (firstTwo === '55'))){
 		return 'MasterCard';
 	} else {
 		return undefined;
